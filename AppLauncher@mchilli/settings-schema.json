@@ -1,0 +1,76 @@
+{
+    "layout" : {
+        "type" : "layout",
+        "pages" : [
+            "settingsPage",
+            "applicationsPage"
+        ],
+        "settingsPage" : {
+            "type" : "page",
+            "title" : "Settings",
+            "sections" : [
+                "optionsSection"
+            ]
+        },
+        "applicationsPage" : {
+            "type" : "page",
+            "title" : "Applications",
+            "sections" : [
+                "applicationsSection"
+            ]
+        },
+        "optionsSection" : {
+            "type" : "section",
+            "title" : "Options",
+            "keys" : [
+                "visibleLauncherLabel",
+                "launcherLabel",
+                "visibleLauncherIcon",
+                "launcherIcon"
+            ]
+        },
+        "applicationsSection" : {
+            "type" : "section",
+            "title" : "Applications",
+            "keys" : [
+                "appList",
+                "visibleAppIcons"
+            ]
+        }
+    },
+    "appList" : {
+        "type" : "list",
+        "columns": [
+            {"id": "name", "title": "Name", "type": "string"},
+            {"id": "icon", "title": "Icon", "type": "icon"},
+            {"id": "command", "title": "Command", "type": "string"}
+        ],
+        "default" : []
+    },
+    "visibleAppIcons" : {
+        "type" : "switch",
+        "description": "Visible App Icons",
+        "default" : true
+    },
+    "visibleLauncherLabel" : {
+        "type" : "switch",
+        "description": "Visible Launcher Label",
+        "default" : true
+    },
+    "launcherLabel" : {
+        "type" : "entry",
+        "description": "Launcher Label",
+        "default" : "Launcher"
+    },
+    "visibleLauncherIcon" : {
+        "type" : "switch",
+        "description": "Visible Launcher Icon",
+        "default" : true
+    },
+    "launcherIcon" : {
+        "type" : "iconfilechooser",
+        "description": "Launcher Icon",
+        "default" : "",
+        "dependency" : "visibleLauncherIcon"
+    }
+}
