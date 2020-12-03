@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-03 11:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desklet.js:64
+msgid "Desktop Notes"
+msgstr ""
+
+#: desklet.js:71
+msgid "No File selected"
+msgstr ""
+
+#: desklet.js:98
+msgid "Can't read file"
+msgstr ""
+
+#. metadata.json->name
+msgid "Desktop Notes desklet"
+msgstr ""
+
+#. metadata.json->description
+msgid "Notes for Cinnamon Desktop"
+msgstr ""
+
+#. settings-schema.json->settings-page->title
+msgid "Settings"
+msgstr ""
+
+#. settings-schema.json->note-section->title
+#. settings-schema.json->note-content->description
+msgid "Note"
+msgstr ""
+
+#. settings-schema.json->font-section->title
+msgid "Font"
+msgstr ""
+
+#. settings-schema.json->note-from-file->description
+msgid "Load note from file"
+msgstr ""
+
+#. settings-schema.json->note-from-file->tooltip
+msgid "Turn on if the note should be load from a file"
+msgstr ""
+
+#. settings-schema.json->note-content->tooltip
+msgid "Change your note here"
+msgstr ""
+
+#. settings-schema.json->file-path->description
+msgid "File path"
+msgstr ""
+
+#. settings-schema.json->file-path->tooltip
+msgid "Select your note file"
+msgstr ""
+
+#. settings-schema.json->edit-cmd->description
+msgid "Edit command"
+msgstr ""
+
+#. settings-schema.json->edit-cmd->tooltip
+msgid "Command to edit the Note, %f will replaced by file path"
+msgstr ""
+
+#. settings-schema.json->font-style->description
+msgid "Style"
+msgstr ""
+
+#. settings-schema.json->font-style->tooltip
+msgid "select new font-family and size"
+msgstr ""
+
+#. settings-schema.json->font-color->description
+msgid "Color"
+msgstr ""
+
+#. settings-schema.json->font-color->tooltip
+msgid "select the new text color"
+msgstr ""

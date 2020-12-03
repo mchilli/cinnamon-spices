@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-03 11:07+0100\n"
+"PO-Revision-Date: 2020-12-03 11:09+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: MCHilli\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#: desklet.js:64
+msgid "Desktop Notes"
+msgstr "Desktop Notizen"
+
+#: desklet.js:71
+msgid "No File selected"
+msgstr "Keine Datei ausgewählt"
+
+#: desklet.js:98
+msgid "Can't read file"
+msgstr "Datei kann nicht gelesen werden"
+
+#. metadata.json->name
+msgid "Desktop Notes desklet"
+msgstr "Desktop Notizen Desklet"
+
+#. metadata.json->description
+msgid "Notes for Cinnamon Desktop"
+msgstr "Notizen für den Cinnamon Desktop"
+
+#. settings-schema.json->settings-page->title
+msgid "Settings"
+msgstr "Einstellungen"
+
+#. settings-schema.json->note-section->title
+#. settings-schema.json->note-content->description
+msgid "Note"
+msgstr "Notiz"
+
+#. settings-schema.json->font-section->title
+msgid "Font"
+msgstr "Schrift"
+
+#. settings-schema.json->note-from-file->description
+msgid "Load note from file"
+msgstr "Lade Notiz aus Datei"
+
+#. settings-schema.json->note-from-file->tooltip
+msgid "Turn on if the note should be load from a file"
+msgstr "Einschalten um die Notiz aus einer Datei zu laden"
+
+#. settings-schema.json->note-content->tooltip
+msgid "Change your note here"
+msgstr "Ändere die Notiz hier"
+
+#. settings-schema.json->file-path->description
+msgid "File path"
+msgstr "Dateipfad"
+
+#. settings-schema.json->file-path->tooltip
+msgid "Select your note file"
+msgstr "Wähle die Notizdatei aus"
+
+#. settings-schema.json->edit-cmd->description
+msgid "Edit command"
+msgstr "Bearbeitungsbefehl"
+
+#. settings-schema.json->edit-cmd->tooltip
+msgid "Command to edit the Note, %f will replaced by file path"
+msgstr "Befehl um die Notiz zu bearbeiten, %f wird durch den Dateipfad ersetzt"
+
+#. settings-schema.json->font-style->description
+msgid "Style"
+msgstr "Aussehen"
+
+#. settings-schema.json->font-style->tooltip
+msgid "select new font-family and size"
+msgstr "wähle eine neue Schriftart und Größe"
+
+#. settings-schema.json->font-color->description
+msgid "Color"
+msgstr "Farbe"
+
+#. settings-schema.json->font-color->tooltip
+msgid "select the new text color"
+msgstr "wähle eine neue Schriftfarbe"

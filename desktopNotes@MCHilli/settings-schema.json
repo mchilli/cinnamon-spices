@@ -1,0 +1,74 @@
+{
+    "layout": {
+        "type": "layout",
+        "pages": [
+            "settings-page"
+        ],
+        "settings-page": {
+            "type": "page",
+            "title": "Settings",
+            "sections": [
+                "note-section",
+                "font-section"
+            ]
+        },
+        "note-section" : {
+            "type": "section",
+            "title": "Note",
+            "keys": [
+                "note-from-file",
+                "note-content",
+                "file-path",
+                "edit-cmd"
+            ]
+        },
+        "font-section" : {
+            "type": "section",
+            "title": "Font",
+            "keys": [
+                "font-style",
+                "font-color"
+            ]
+        }
+    },
+    "note-from-file": {
+        "type": "switch",
+        "default": false,
+        "description": "Load note from file",
+        "tooltip": "Turn on if the note should be load from a file"
+    },
+    "note-content": {
+        "type": "textview",
+        "default": "Your Note Here",
+        "description": "Note",
+        "tooltip" : "Change your note here",
+        "dependency": "!note-from-file"
+    },
+    "file-path": {
+        "type": "filechooser",
+        "default": "",
+        "description": "File path",
+        "tooltip": "Select your note file",
+        "allow-none" : true,
+        "dependency": "note-from-file"
+    },
+    "edit-cmd": {
+        "type": "entry",
+        "default": "xed %f",
+        "description": "Edit command",
+        "tooltip": "Command to edit the Note, %f will replaced by file path",
+        "dependency": "note-from-file"
+    },
+    "font-style": {
+        "type": "fontchooser",
+        "default": "Monospace 10",
+        "description" : "Style",
+        "tooltip" : "select new font-family and size"
+    },
+    "font-color" : {
+        "type": "colorchooser",
+        "default" : "rgb(255,255,255)",
+        "description" : "Color",
+        "tooltip" : "select the new text color"
+    }
+}
