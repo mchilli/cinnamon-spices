@@ -40,6 +40,9 @@ class MyDesklet extends Desklet.Desklet {
             this.settings.bindProperty(Settings.BindingDirection.IN, "edit-cmd", "editCmd");
             this.settings.bindProperty(Settings.BindingDirection.IN, "font-style", "fontStyle", this.on_font_changed);
             this.settings.bindProperty(Settings.BindingDirection.IN, "font-color", "fontColor", this.on_font_changed);
+            this.settings.bindProperty(Settings.BindingDirection.IN, "font-align", "fontAlign", this.on_font_changed);
+            this.settings.bindProperty(Settings.BindingDirection.IN, "font-shadow-color", "fontShadowColor", this.on_font_changed);
+            this.settings.bindProperty(Settings.BindingDirection.IN, "font-shadow-offset", "fontShadowOffset", this.on_font_changed);
         }
         catch (e) {
             global.logError(e);
@@ -119,22 +122,29 @@ class MyDesklet extends Desklet.Desklet {
         let style = "";
         if (font.indexOf("Bold") != -1) {
             font.splice(font.indexOf("Bold"), 1);
-            style += 'font-weight: bold; ';
+            style += 'font-weight: bold';
         }
         if (font.indexOf("Italic") != -1) {
             font.splice(font.indexOf("Italic"), 1);
-            style += 'font-style: italic; ';
+            style += 'font-style: italic';
         }
         if (font.indexOf("Oblique") != -1) {
             font.splice(font.indexOf("Oblique"), 1);
-            style += 'font-style: oblique; ';
+            style += 'font-style: oblique';
         }
         if (font.indexOf("Condensed") != -1) {
             font.splice(font.indexOf("Condensed"), 1);
-            style += 'font-stretch: condensed; ';
+            style += 'font-stretch: condensed';
         }
         font = [font.pop(), font.join(" ")];
-        this.container.style=`${style}font-family: ${font[1]}; font-size: ${font[0]}pt; color: ${this.fontColor};`;
+        this.container.style = `
+            ${style};
+            font-family: ${font[1]};
+            font-size: ${font[0]}pt;
+            color: ${this.fontColor};
+            text-align: ${this.fontAlign};
+            text-shadow: ${this.fontShadowOffset}px ${this.fontShadowOffset}px 1px ${this.fontShadowColor};
+        `;
     }
 
     on_desklet_clicked() {

@@ -12,7 +12,7 @@
                 "font-section"
             ]
         },
-        "note-section" : {
+        "note-section": {
             "type": "section",
             "title": "Note",
             "keys": [
@@ -22,12 +22,15 @@
                 "edit-cmd"
             ]
         },
-        "font-section" : {
+        "font-section": {
             "type": "section",
             "title": "Font",
             "keys": [
                 "font-style",
-                "font-color"
+                "font-color",
+                "font-align",
+                "font-shadow-color",
+                "font-shadow-offset"
             ]
         }
     },
@@ -41,7 +44,7 @@
         "type": "textview",
         "default": "Your Note Here",
         "description": "Note",
-        "tooltip" : "Change your note here",
+        "tooltip": "Change your note here",
         "dependency": "!note-from-file"
     },
     "file-path": {
@@ -49,7 +52,7 @@
         "default": "",
         "description": "File path",
         "tooltip": "Select your note file",
-        "allow-none" : true,
+        "allow-none": true,
         "dependency": "note-from-file"
     },
     "edit-cmd": {
@@ -62,13 +65,40 @@
     "font-style": {
         "type": "fontchooser",
         "default": "Monospace 10",
-        "description" : "Style",
-        "tooltip" : "select new font-family and size"
+        "description": "Style",
+        "tooltip": "select font-family and size"
     },
-    "font-color" : {
+    "font-color": {
         "type": "colorchooser",
-        "default" : "rgb(255,255,255)",
-        "description" : "Color",
-        "tooltip" : "select the new text color"
+        "default": "rgb(255,255,255)",
+        "description": "Color",
+        "tooltip": "select the text color"
+    },
+    "font-align": {
+        "type": "combobox",
+        "default": "left",
+        "options": {
+            "Left": "left",
+            "Center": "center",
+            "Right": "right"
+        },
+        "description": "Alignment",
+        "tooltip": "select the text alignment"
+    },
+    "font-shadow-color": {
+        "type": "colorchooser",
+        "default": "rgb(0,0,0)",
+        "description": "Shadow Color",
+        "tooltip": "select the text shadow color"
+    },
+    "font-shadow-offset": {
+        "type": "spinbutton",
+        "default": 1,
+        "min": -5,
+        "max":  5,
+        "units": "px",
+        "step": 1,
+        "description": "Shadow Offset",
+        "tooltip": "select the text shadow offset"
     }
 }
