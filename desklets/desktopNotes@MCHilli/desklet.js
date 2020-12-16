@@ -48,6 +48,8 @@ class MyDesklet extends Desklet.Desklet {
             global.logError(e);
         }
 
+        this._menu.addAction(_("Edit …"), () => this.edit_file())
+
         this.on_setting_changed();
         this.on_font_changed();
     }
@@ -147,11 +149,13 @@ class MyDesklet extends Desklet.Desklet {
         `;
     }
 
-    on_desklet_clicked() {
+    edit_file() {
         if (this.noteFromFile) {
             if(this.editCmd != "") {
                 Util.spawnCommandLine(this.editCmd.replace("%f", `"${this.decodeFilePath}"`));
             }
+        } else {
+            Util.spawnCommandLine(`xlet-settings desklet ${this.metadata.uuid} ${this.instanceId}`);
         }
     }
     
