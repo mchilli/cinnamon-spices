@@ -1,0 +1,128 @@
+{
+    "layout": {
+        "type": "layout",
+        "pages": ["page-connections", "page-settings"],
+
+        "page-connections": {
+            "type": "page",
+            "title": "Connections",
+            "sections": ["section-connections"]
+        },
+        "page-settings": {
+            "type": "page",
+            "title": "Settings",
+            "sections": ["section-application", "section-terminal"]
+        },
+
+        "section-connections": {
+            "type": "section",
+            "title": "SSH Connections",
+            "keys": ["connections"]
+        },
+        "section-application": {
+            "type": "section",
+            "title": "Application",
+            "keys": ["applet-icon", "notification-enabled"]
+        },
+        "section-terminal": {
+            "type": "section",
+            "title": "Terminal",
+            "keys": [
+                "terminal-app",
+                "terminal-exec-flag",
+                "custom-title",
+                "custom-title-flag",
+                "custom-profile",
+                "custom-profile-flag"
+            ]
+        }
+    },
+
+    "connections": {
+        "type": "list",
+        "columns": [
+            {
+                "id": "name",
+                "title": "Name",
+                "type": "string"
+            },
+            {
+                "id": "group",
+                "title": "Group",
+                "type": "string"
+            },
+            {
+                "id": "host",
+                "title": "Host",
+                "type": "string"
+            },
+            {
+                "id": "user",
+                "title": "User",
+                "type": "string"
+            },
+            {
+                "id": "flags",
+                "title": "SSH Flags",
+                "type": "string"
+            },
+            {
+                "id": "profile",
+                "title": "Profile",
+                "type": "string"
+            }
+        ],
+        "default": []
+    },
+
+    "applet-icon": {
+        "type": "iconfilechooser",
+        "description": "Icon",
+        "default": "network-workgroup-symbolic"
+    },
+    "notification-enabled": {
+        "type": "switch",
+        "description": "Notification",
+        "default": true,
+        "tooltip": "Show notifications"
+    },
+
+    "terminal-app": {
+        "type": "entry",
+        "default": "gnome-terminal",
+        "description": "Terminal application",
+        "tooltip": "Set your default Terminal application."
+    },
+    "terminal-exec-flag": {
+        "type": "entry",
+        "default": "-e",
+        "description": "Terminal execution flag",
+        "tooltip": "Set the terminal execution flag to run the ssh command."
+    },
+    "custom-title": {
+        "type": "switch",
+        "default": false,
+        "description": "Custom window title",
+        "tooltip": "Set if the window should be titled with the connection name."
+    },
+    "custom-title-flag": {
+        "type": "entry",
+        "default": "-t",
+        "description": "Custom window title flag",
+        "tooltip": "Set the terminal flag to use a custom window title.",
+        "dependency": "custom-title"
+    },
+    "custom-profile": {
+        "type": "switch",
+        "default": false,
+        "description": "Custom terminal profile",
+        "tooltip": "Set if the terminal should be use a specific profile, defined in connections."
+    },
+    "custom-profile-flag": {
+        "type": "entry",
+        "default": "--profile=",
+        "description": "Custom terminal profile flag",
+        "tooltip": "Set the terminal flag to use a custom profile.",
+        "dependency": "custom-profile"
+    }
+}

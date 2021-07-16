@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-16 18:32+0200\n"
+"PO-Revision-Date: 2021-07-16 18:46+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: MCHilli\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#: applet.js:94
+msgid "Edit Connections"
+msgstr "Verbindungen bearb."
+
+#: applet.js:141
+msgid "Connecting to"
+msgstr "Verbinden nach"
+
+#. metadata.json->name
+msgid "SSH Manager"
+msgstr "SSH Manager"
+
+#. metadata.json->description
+msgid "Manage your SSH Connections in this Applet."
+msgstr "Verwalte deine SSH Verbindungen in diesem Applet"
+
+#. settings-schema.json->page-connections->title
+msgid "Connections"
+msgstr "Verbindungen"
+
+#. settings-schema.json->page-settings->title
+msgid "Settings"
+msgstr "Einstellungen"
+
+#. settings-schema.json->section-connections->title
+msgid "SSH Connections"
+msgstr "SSH Verbindungen"
+
+#. settings-schema.json->section-application->title
+msgid "Application"
+msgstr "Anwendung"
+
+#. settings-schema.json->section-terminal->title
+msgid "Terminal"
+msgstr "Terminal"
+
+#. settings-schema.json->connections->columns->title
+msgid "Name"
+msgstr "Name"
+
+#. settings-schema.json->connections->columns->title
+msgid "Group"
+msgstr "Gruppe"
+
+#. settings-schema.json->connections->columns->title
+msgid "Host"
+msgstr "Host"
+
+#. settings-schema.json->connections->columns->title
+msgid "User"
+msgstr "Benutzer"
+
+#. settings-schema.json->connections->columns->title
+msgid "SSH Flags"
+msgstr "SSH Flags"
+
+#. settings-schema.json->connections->columns->title
+msgid "Profile"
+msgstr "Profil"
+
+#. settings-schema.json->applet-icon->description
+msgid "Icon"
+msgstr "Symbol"
+
+#. settings-schema.json->notification-enabled->description
+msgid "Notification"
+msgstr "Benachrichtigung"
+
+#. settings-schema.json->notification-enabled->tooltip
+msgid "Show notifications"
+msgstr "Zeige Benachrichtigung"
+
+#. settings-schema.json->terminal-app->description
+msgid "Terminal application"
+msgstr "Terminalanwendung"
+
+#. settings-schema.json->terminal-app->tooltip
+msgid "Set your default Terminal application."
+msgstr "Stellen Sie Ihre Standardterminalanwendung ein."
+
+#. settings-schema.json->terminal-exec-flag->description
+msgid "Terminal execution flag"
+msgstr "Terminal Ausführungs-Flag"
+
+#. settings-schema.json->terminal-exec-flag->tooltip
+msgid "Set the terminal execution flag to run the ssh command."
+msgstr "Stellen Sie die Terminal Ausführung-Flag ein, um den Befehl SSH auszuführen."
+
+#. settings-schema.json->custom-title->description
+msgid "Custom window title"
+msgstr "Benutzerdefinierte Fenstertitel"
+
+#. settings-schema.json->custom-title->tooltip
+msgid "Set if the window should be titled with the connection name."
+msgstr "Soll das Fenster mit dem Verbindungsnamen betitelt werden."
+
+#. settings-schema.json->custom-title-flag->description
+msgid "Custom window title flag"
+msgstr "Benutzerdefinierte Fenstertitel-Flag"
+
+#. settings-schema.json->custom-title-flag->tooltip
+msgid "Set the terminal flag to use a custom window title."
+msgstr "Stellen Sie die Terminal-Flag ein, um einen benutzerdefinierten Fenstertitel zu verwenden."
+
+#. settings-schema.json->custom-profile->description
+msgid "Custom terminal profile"
+msgstr "Benutzerdefinierte Benutzerprofil"
+
+#. settings-schema.json->custom-profile->tooltip
+msgid "Set if the terminal should be use a specific profile, defined in connections."
+msgstr "Soll das Terminal ein bestimmtes Profil verwenden, das in Verbindungen definiert ist."
+
+#. settings-schema.json->custom-profile-flag->description
+msgid "Custom terminal profile flag"
+msgstr "Benutzerdefinierte Benutzerprofil-Flag"
+
+#. settings-schema.json->custom-profile-flag->tooltip
+msgid "Set the terminal flag to use a custom profile."
+msgstr "Stellen Sie die Terminal-Flag ein, um einen benutzerdefiniertes Benutzerprofil zu verwenden."

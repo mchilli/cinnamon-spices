@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-16 18:32+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: applet.js:94
+msgid "Edit Connections"
+msgstr ""
+
+#: applet.js:141
+msgid "Connecting to"
+msgstr ""
+
+#. metadata.json->name
+msgid "SSH Manager"
+msgstr ""
+
+#. metadata.json->description
+msgid "Manage your SSH Connections in this Applet."
+msgstr ""
+
+#. settings-schema.json->page-connections->title
+msgid "Connections"
+msgstr ""
+
+#. settings-schema.json->page-settings->title
+msgid "Settings"
+msgstr ""
+
+#. settings-schema.json->section-connections->title
+msgid "SSH Connections"
+msgstr ""
+
+#. settings-schema.json->section-application->title
+msgid "Application"
+msgstr ""
+
+#. settings-schema.json->section-terminal->title
+msgid "Terminal"
+msgstr ""
+
+#. settings-schema.json->connections->columns->title
+msgid "Name"
+msgstr ""
+
+#. settings-schema.json->connections->columns->title
+msgid "Group"
+msgstr ""
+
+#. settings-schema.json->connections->columns->title
+msgid "Host"
+msgstr ""
+
+#. settings-schema.json->connections->columns->title
+msgid "User"
+msgstr ""
+
+#. settings-schema.json->connections->columns->title
+msgid "SSH Flags"
+msgstr ""
+
+#. settings-schema.json->connections->columns->title
+msgid "Profile"
+msgstr ""
+
+#. settings-schema.json->applet-icon->description
+msgid "Icon"
+msgstr ""
+
+#. settings-schema.json->notification-enabled->description
+msgid "Notification"
+msgstr ""
+
+#. settings-schema.json->notification-enabled->tooltip
+msgid "Show notifications"
+msgstr ""
+
+#. settings-schema.json->terminal-app->description
+msgid "Terminal application"
+msgstr ""
+
+#. settings-schema.json->terminal-app->tooltip
+msgid "Set your default Terminal application."
+msgstr ""
+
+#. settings-schema.json->terminal-exec-flag->description
+msgid "Terminal execution flag"
+msgstr ""
+
+#. settings-schema.json->terminal-exec-flag->tooltip
+msgid "Set the terminal execution flag to run the ssh command."
+msgstr ""
+
+#. settings-schema.json->custom-title->description
+msgid "Custom window title"
+msgstr ""
+
+#. settings-schema.json->custom-title->tooltip
+msgid "Set if the window should be titled with the connection name."
+msgstr ""
+
+#. settings-schema.json->custom-title-flag->description
+msgid "Custom window title flag"
+msgstr ""
+
+#. settings-schema.json->custom-title-flag->tooltip
+msgid "Set the terminal flag to use a custom window title."
+msgstr ""
+
+#. settings-schema.json->custom-profile->description
+msgid "Custom terminal profile"
+msgstr ""
+
+#. settings-schema.json->custom-profile->tooltip
+msgid ""
+"Set if the terminal should be use a specific profile, defined in "
+"connections."
+msgstr ""
+
+#. settings-schema.json->custom-profile-flag->description
+msgid "Custom terminal profile flag"
+msgstr ""
+
+#. settings-schema.json->custom-profile-flag->tooltip
+msgid "Set the terminal flag to use a custom profile."
+msgstr ""

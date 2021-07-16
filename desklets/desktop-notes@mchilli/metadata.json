@@ -1,8 +1,8 @@
 {
     "prevent-decorations": false,
-    "uuid": "desktopNotes@MCHilli",
+    "uuid": "desktop-notes@mchilli",
     "name": "Desktop Notes desklet",
     "description": "Notes for Cinnamon Desktop",
     "max-instances": 10,
-    "last-edited": 1606989234
+    "last-edited": 1626455307
 }
