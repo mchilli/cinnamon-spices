@@ -2,5 +2,5 @@
     "uuid": "ssh-manager@mchilli",
     "name": "SSH Manager",
     "description": "Manage your SSH Connections in this Applet.",
-    "last-edited": 1626454292
+    "max-instances": -1
 }

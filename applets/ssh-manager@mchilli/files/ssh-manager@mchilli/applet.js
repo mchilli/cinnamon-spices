@@ -1,16 +1,18 @@
 const Applet = imports.ui.applet;
-const GLib = imports.gi.GLib;
 const PopupMenu = imports.ui.popupMenu;
 const Main = imports.ui.main;
 const MessageTray = imports.ui.messageTray;
-const Gettext = imports.gettext;
 const Settings = imports.ui.settings;
 const Util = imports.misc.util;
 const St = imports.gi.St;
 
-const UUID = 'ssh-manager@mchilli';
+const GLib = imports.gi.GLib;
+const Gettext = imports.gettext;
+
 const APPNAME = 'SSH Manager';
 
+// l10n/translation support
+const UUID = 'ssh-manager@mchilli';
 Gettext.bindtextdomain(UUID, GLib.get_home_dir() + '/.local/share/locale');
 
 function _(str) {
