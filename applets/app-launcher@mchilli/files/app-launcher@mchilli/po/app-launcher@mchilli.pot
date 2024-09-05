@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-18 11:06+0200\n"
+"POT-Creation-Date: 2024-09-05 14:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,106 +17,126 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: applet.js:102
+#: applet.js:108
 msgid "Edit Applications"
 msgstr ""
 
-#: applet.js:694 applet.js:948
+#: applet.js:737 applet.js:1031
 msgid "Delete"
 msgstr ""
 
-#: applet.js:695 applet.js:949
+#: applet.js:738 applet.js:1032
 msgid "Edit"
 msgstr ""
 
-#: applet.js:696 applet.js:950
+#: applet.js:739 applet.js:1033 dialogs.py:38 dialogs.py:247
 msgid "Cancel"
+msgstr ""
+
+#: dialogs.py:36 dialogs.py:246
+msgid "OK"
 msgstr ""
 
 #. settings-schema.json->list-applications->columns->title
 #. settings-schema.json->list-groups->columns->title
-#: dialogs.py:35 widgets.py:35
+#: dialogs.py:39 widgets.py:43
 msgid "Name"
 msgstr ""
 
 #. settings-schema.json->list-applications->columns->title
-#: dialogs.py:41
+#: dialogs.py:45
 msgid "Group"
 msgstr ""
 
 #. settings-schema.json->list-applications->columns->title
-#: dialogs.py:42 widgets.py:42
+#: dialogs.py:46 widgets.py:44
 msgid "Command"
 msgstr ""
 
-#: dialogs.py:178
+#: dialogs.py:190
 msgid "The name cannot be empty"
 msgstr ""
 
-#: dialogs.py:183
+#: dialogs.py:195
 msgid "The name is already used"
 msgstr ""
 
-#: dialogs.py:190
+#: dialogs.py:202
 msgid "Valid name"
 msgstr ""
 
-#: dialogs.py:196
+#: dialogs.py:208
 msgid "Valid command"
 msgstr ""
 
-#: dialogs.py:199
+#: dialogs.py:211
 msgid "The command is not valid"
 msgstr ""
 
-#: dialogs.py:211
+#: dialogs.py:245
 msgid "Which data should be replaced from *.desktop file?"
 msgstr ""
 
-#: dialogs.py:256
+#: dialogs.py:289
 msgid "really delete?"
+msgstr ""
+
+#: dialogs.py:290
+msgid "No"
+msgstr ""
+
+#: dialogs.py:291
+msgid "Yes"
 msgstr ""
 
 #. settings-schema.json->list-applications->columns->title
 #. settings-schema.json->list-groups->columns->title
 #. settings-schema.json->launcher-icon->description
-#: widgets.py:28
+#: widgets.py:42
 msgid "Icon"
 msgstr ""
 
-#: widgets.py:116
+#: widgets.py:47
 msgid "Add application"
 msgstr ""
 
-#: widgets.py:117
+#: widgets.py:48
 msgid "Add new entry"
 msgstr ""
 
-#: widgets.py:121
+#: widgets.py:51
 msgid "Add separator"
 msgstr ""
 
-#: widgets.py:129
-msgid "Remove selected entry"
-msgstr ""
-
-#: widgets.py:135
+#: widgets.py:54
 msgid "Edit selected entry"
 msgstr ""
 
-#: widgets.py:141
+#: widgets.py:57
 msgid "Duplicate selected entry"
 msgstr ""
 
-#: widgets.py:147
+#: widgets.py:60
 msgid "Move selected entry up"
 msgstr ""
 
-#: widgets.py:153
+#: widgets.py:63
 msgid "Move selected entry down"
 msgstr ""
 
-#: widgets.py:316
+#: widgets.py:66
+msgid "Remove selected entry"
+msgstr ""
+
+#: widgets.py:69
+msgid "Save?"
+msgstr ""
+
+#: widgets.py:70
+msgid "Save the current configuration"
+msgstr ""
+
+#: widgets.py:257
 msgid "Separator"
 msgstr ""
 
