@@ -75,7 +75,7 @@ class EditDialog():
         values = {
                 "type": self.type,
                 "name": self.name_entry.get_text(),
-                "icon": self._get_icon()
+                "icon": self._get_icon() or "application-x-executable"
             }
         
         if self.type == 'app':
