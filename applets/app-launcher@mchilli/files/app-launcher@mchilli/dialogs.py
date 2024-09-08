@@ -13,6 +13,9 @@ UUID = 'app-launcher@mchilli'
 APP_NAME = "App Launcher"
 APPLET_DIR = os.path.join(os.path.dirname(__file__))
 
+DEFAULT_APP_ICON = "application-x-executable"
+DEFAULT_FOLDER_ICON = "folder"
+
 class EditDialog():
     def __init__(self, variant, groups, item=None):
         self.groups = groups
@@ -23,7 +26,7 @@ class EditDialog():
         else:
             self.type = self.variant
         
-        self.icon_string = None
+        self.icon_string = DEFAULT_FOLDER_ICON if self.type == "group" else DEFAULT_APP_ICON
         self.name_origin = ''
         self.new_group = None
 
@@ -75,7 +78,7 @@ class EditDialog():
         values = {
                 "type": self.type,
                 "name": self.name_entry.get_text(),
-                "icon": self._get_icon() or "application-x-executable"
+                "icon": self._get_icon()
             }
         
         if self.type == 'app':
@@ -173,7 +176,7 @@ class EditDialog():
                     if self.name_entry.get_text() != data['Name']:
                         import_data['Name'] = (self.name_entry.get_text(), data['Name'])
                 if 'Icon' in data:
-                    if not self._get_icon():
+                    if self._get_icon() == DEFAULT_APP_ICON:
                         self._set_icon(data['Icon'])
                     if self._get_icon() != data['Icon']:
                         import_data['Icon'] = (self._get_icon(), data['Icon'])
