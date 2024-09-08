@@ -9,7 +9,7 @@ gi.require_version("Gdk", "3.0")
 gi.require_version("XApp", "1.0")
 from gi.repository import Gio, Gtk, Gdk, GdkPixbuf, GLib, XApp
 
-UUID = 'app-launcher-dev@mchilli'
+UUID = 'app-launcher@mchilli'
 APP_NAME = "App Launcher"
 APPLET_DIR = os.path.join(os.path.dirname(__file__))
 
