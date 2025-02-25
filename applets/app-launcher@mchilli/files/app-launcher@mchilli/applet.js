@@ -103,12 +103,11 @@ class MyApplet extends Applet.TextIconApplet {
     }
 
     updateWorkspace() {
-        let index = parseInt(this.bindToWorkspace) || -1;
+        let index = parseInt(this.bindToWorkspace);
         let workspace = global.screen.get_active_workspace_index();
         if (index === -1 || index > this.workspaces.length - 1) {
             this.set_applet_enabled(true);
         } else {
-            // global.log(this.workspaces[workspace] + ':' +  (workspace + 1) + '/' + this.workspaces.length);
             this.set_applet_enabled(workspace === index);
         }
     }
