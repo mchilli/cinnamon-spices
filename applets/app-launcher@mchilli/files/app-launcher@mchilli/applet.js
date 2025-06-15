@@ -927,6 +927,9 @@ class MyPopupSubMenuItem extends PopupMenu.PopupSubMenuMenuItem {
 
         this._signals.connect(this.actor, 'enter-event', this.onMouseEnter, this);
         this._signals.connect(this.actor, 'leave-event', this.onMouseLeave, this);
+
+        this._signals.connect(this.menu.actor, 'enter-event', this.onMouseEnter, this);
+        this._signals.connect(this.menu.actor, 'leave-event', this.onMouseLeave, this);
         
         this.actor.add_actor(this._icon);
     }
@@ -1127,8 +1130,12 @@ class MyPopupSubMenuItem extends PopupMenu.PopupSubMenuMenuItem {
     onMouseEnter(event) {
         if (this.applet.openByHover && !this.menu.isOpen && !this.hoverTimeoutID) {
             this.hoverTimeoutID = setTimeout(() => {
+                this.applet.menu.closeMenuGroupItems();
                 this.menu.open();
             }, this.applet.openByHoverDelay);
+        } else if (this.leaveTimeoutID) {
+            clearTimeout(this.leaveTimeoutID);
+            this.leaveTimeoutID = undefined;
         }
     }
 
@@ -1136,6 +1143,12 @@ class MyPopupSubMenuItem extends PopupMenu.PopupSubMenuMenuItem {
         if (this.hoverTimeoutID) {
             clearTimeout(this.hoverTimeoutID);
             this.hoverTimeoutID = undefined;
+        } else if (!this.applet.menu.isContextOpen()) {
+            this.leaveTimeoutID = setTimeout(() => {
+                if (this.menu.isOpen) {
+                    this.menu.close();
+                }
+            }, this.applet.openByHoverDelay);
         }
     }
 
